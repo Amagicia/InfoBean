@@ -19,37 +19,100 @@ a,b,c,d,e,f=map(int,input("Enter the Stock of 6 unit sperated by Comma(,) : ").s
 
 high=0;
 
-if a>b:
-    if a>c:
-        if a>d:
-            if a>e:
-                high=a
+if a > b:
+    if a > c:
+        if a > d:
+            if a > e:
+                if a > f:
+                    print("Greatest =", a)
+                else:
+                    print("Greatest =", f)
             else:
-                high=e
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
         else:
-            high=d
+            if d > e:
+                if d > f:
+                    print("Greatest =", d)
+                else:
+                    print("Greatest =", f)
+            else:
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
     else:
-        high=c 
-    
+        # c is greater than a and b
+        if c > d:
+            if c > e:
+                if c > f:
+                    print("Greatest =", c)
+                else:
+                    print("Greatest =", f)
+            else:
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
+        else:
+            if d > e:
+                if d > f:
+                    print("Greatest =", d)
+                else:
+                    print("Greatest =", f)
+            else:
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
 else:
-    if b>c:
-        if b>d:
-            if b>e:
-                high=b 
+    # b is greater than a
+    if b > c:
+        if b > d:
+            if b > e:
+                if b > f:
+                    print("Greatest =", b)
+                else:
+                    print("Greatest =", f)
             else:
-                high=e
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
         else:
-            high=d
+            if d > e:
+                if d > f:
+                    print("Greatest =", d)
+                else:
+                    print("Greatest =", f)
+            else:
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
     else:
-        if c>d:
-            if c>e:
-                high=c
+        # c is greater than b
+        if c > d:
+            if c > e:
+                if c > f:
+                    print("Greatest =", c)
+                else:
+                    print("Greatest =", f)
             else:
-                high=e 
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
         else:
-            if d>e:
-                high=d 
+            if d > e:
+                if d > f:
+                    print("Greatest =", d)
+                else:
+                    print("Greatest =", f)
             else:
-                high=e
-
-print(f"Highest Stock : {high}")
+                if e > f:
+                    print("Greatest =", e)
+                else:
+                    print("Greatest =", f)
